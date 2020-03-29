@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <a href="/ejercicios/">go back</a>
+    <p><em>Abre la consola</em></p>
+
+    <script>
+        // global scope
+        var diego = "Hola Diego"
+
+        // function scope
+        function printNumbers() {
+            for(var i = 0; i < 10; i++) {
+                setTimeout(function() {
+                    console.log(i);
+                }, 100);
+            }
+        }
+
+        printNumbers();
+
+
+
+    </script>
+
+
+
+</body>
+</html>
